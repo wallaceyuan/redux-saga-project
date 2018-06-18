@@ -3,7 +3,10 @@
  */
 import * as types from './action-types'
 export default {
-    getList(id){
-        return {type:types.GET_LIST,id}
+    getNameAsync(name){
+        return {type:types.GET_NAME_ASYNC,name}
+    },
+    getList(name){
+        return {type:types.GET_LIST_ASYNC,name}
     }
 }

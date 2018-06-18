@@ -4,7 +4,7 @@
 import React,{ Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import List from './components/List';
+import {List , Login} from './components';
 import { Provider } from 'react-redux';
 import store from './store'
 import { ConnectedRouter} from 'react-router-redux'
@@ -17,9 +17,9 @@ ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
             <Switch>
+                <Route path="/Login" component={Login}/>
                 <Route path="/list" component={List}/>
-                <Redirect to="/List"/>
+                <Redirect to="/Login"/>
             </Switch>
         </ConnectedRouter>
-    </Provider>
-    ,document.querySelector('#root'))
+    </Provider>, document.querySelector('#root'))

@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware ,compose } from 'redux'
 import rootReducer from './reducers'
 import createSagaMilldeware from 'redux-saga'
-/*import { rootSaga } from  '../sagas'*/
+import { rootSaga } from  '../sagas'
 
 import { routerMiddleware } from 'react-router-redux'
 import createHistory from 'history/createHashHistory';
@@ -12,10 +12,10 @@ const middlewareRouter = routerMiddleware(history);
 let sagaMiddleware = createSagaMilldeware()
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-///let store = createStore(rootReducer,composeEnhancers(applyMiddleware(sagaMiddleware,middlewareRouter)));
-let store = createStore(rootReducer);
+let store = createStore(rootReducer,composeEnhancers(applyMiddleware(sagaMiddleware,middlewareRouter)));
+//let store = createStore(rootReducer);
 
-//sagaMiddleware.run(rootSaga,store)
+sagaMiddleware.run(rootSaga,store)
 
 window.store = store
 
