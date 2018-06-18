@@ -25,6 +25,7 @@ function* requestApi() {
 function* enterName() {
     while(true){
         var { name } = yield take(types.GET_NAME_ASYNC)
+        window.localStorage.setItem('gitHubName',name)
         yield put({type:types.GET_NAME,name:name})
         yield put(push('/list'))
     }
