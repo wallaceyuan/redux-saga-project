@@ -7,25 +7,22 @@ import { push } from 'react-router-redux'
 import { takeEvery, all, call, put , take } from 'redux-saga/effects';
 import ListQueryModel from './model/ListQueryModel'
 const listQueryModel = new ListQueryModel();
-import async from 'asyncs'
-
-
 
 let Api = {
     request(name){
         return listQueryModel.query(name)
+    },
+    requestRep(name){
+        return listQueryModel.queryRepos(name)
     }
-}
-
-function* request(name) {
-    return listQueryModel.query(name)
 }
 
 function* requestApi() {
     while(true){
         var { name } = yield take(types.GET_LIST_ASYNC)//监听
-        let results = yield call(Api.request,name)
-        yield put({type:types.GET_LIST,results})
+        let info = yield call(Api.request,name)
+        let reps = yield call(Api.requestRep,name)
+        yield put({type:types.GET_LIST,info,reps})
     }
 }
 
