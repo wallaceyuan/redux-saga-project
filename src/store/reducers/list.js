@@ -3,7 +3,7 @@
  */
 import * as types from '../action-types'
 
-export default function (state = { results:[] },action) {
+export default function (state = { results: "" },action) {
     switch (action.type){
         case types.GET_LIST:
             return {...state,results:action.results}

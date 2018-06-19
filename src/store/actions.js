@@ -6,7 +6,7 @@ export default {
     getNameAsync(name){
         return {type:types.GET_NAME_ASYNC,name}
     },
-    getList(name){
+    getListAsync(name){
         return {type:types.GET_LIST_ASYNC,name}
     }
 }

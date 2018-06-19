@@ -1,10 +1,19 @@
 const path = require('path');
+const webpack = require('webpack')
 
 module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve('dist'),
         filename: 'bundle.js'
+    },
+    resolve: {
+        //引入模块的时候，可以不用扩展名
+        extensions: [".js", ".less", ".json"],
+        alias: {//别名
+            "bootstrap": "bootstrap/dist/css/bootstrap.css"
+        },
+        modules: [path.resolve(__dirname, 'node_modules')]
     },
     devtool: 'source-map',
     module: {
@@ -63,8 +72,13 @@ module.exports = {
                 loader: "url-loader?limit=30000&name=fonts/[hash:8].[name].[ext]"
             },
         ]
-    }
-
-
-
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            Popper: ['popper.js', 'default'],
+        })
+    ]
 }

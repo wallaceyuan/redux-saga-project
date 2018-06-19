@@ -1,5 +1,112 @@
+a {
+  background-color: transparent;
+}
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.px-3 {
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+}
+.mt-4 {
+  margin-top: 24px !important;
+}
+.py-3 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+
 .login{
   width: 500px;
   height: 200px;
   margin: 200px auto;
+}
+
+.clearfix::before {
+  display: table;
+  content: "";
+}
+.float-left {
+  float: left !important;
+}
+.user-profile-nav {
+  background-color: #fff;
+  border-bottom: solid 1px #d1d5da;
+}
+.top-0 {
+  top: 0 !important;
+}
+
+.UnderlineNav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e4e8;
+}
+.UnderlineNav-body {
+  display: flex;
+  margin-bottom: -1px;
+}
+
+
+.UnderlineNav-item{margin-right:16px;padding:16px 8px;border-bottom:2px solid transparent;color:#586069;text-align:center;font-size:14px;line-height:1.5;}
+.UnderlineNav-item:focus,.UnderlineNav-item:hover{color:#24292e;text-decoration:none;transition:.2s ease;border-bottom-color:#d1d5da;}
+.UnderlineNav-item:focus .UnderlineNav-octicon,.UnderlineNav-item:hover .UnderlineNav-octicon{color:#6a737d;}
+.UnderlineNav-item.selected{color:#24292e;font-weight:600;border-bottom-color:#e36209;}
+.UnderlineNav-item.selected .UnderlineNav-octicon{color:#6a737d;}
+.UnderlineNav--right{justify-content:flex-end;}
+.UnderlineNav--right .UnderlineNav-item{margin-right:0;margin-left:16px;}
+.UnderlineNav--right .UnderlineNav-actions{flex:1 1 auto;}
+.UnderlineNav-actions{align-self:center;}
+.UnderlineNav--full{display:block;}
+.UnderlineNav-octicon{color:#959da5;}
+.UnderlineNav-container{display:flex;justify-content:space-between;}
+
+
+
+
+.UnderlineNav-item:hover,.UnderlineNav-item:focus {
+  color: #24292e;
+  text-decoration: none;
+  border-bottom-color: #d1d5da;
+  transition: 0.2s ease
+}
+
+.UnderlineNav-item:hover .UnderlineNav-octicon,.UnderlineNav-item:focus .UnderlineNav-octicon {
+  color: #6a737d
+}
+
+.Counter {
+  display: inline-block;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  color: #586069;
+  background-color: rgba(27,31,35,0.08);
+  border-radius: 20px;
+}
+
+
+.vcard-names-container {
+  top: 0;
+}
+.vcard-names {
+  line-height: 1;
+}
+.vcard-fullname {
+  font-size: 26px;
+  line-height: 30px;
+}
+.vcard-username {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: #666;
+}
+.d-block {
+  display: block !important;
 }
