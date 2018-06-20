@@ -21,8 +21,15 @@ function* requestApi() {
     while(true){
         var { name } = yield take(types.GET_LIST_ASYNC)//监听
         let info = yield call(Api.request,name)
+        yield put({type:types.GET_LIST,info})
+    }
+}
+
+function* getListResponseAsync() {
+    while(true){
+        var { name } = yield take(types.GET_LIST_REPO_ASYNC)//监听
         let reps = yield call(Api.requestRep,name)
-        yield put({type:types.GET_LIST,info,reps})
+        yield put({type:types.GET_LIST_REPO,reps})
     }
 }
 
@@ -37,6 +44,6 @@ function* enterName() {
 
 export function* rootSaga({dispatch,getState}) {
     yield all([
-        requestApi(),enterName()
+        requestApi(),getListResponseAsync(),enterName()
     ])
 }

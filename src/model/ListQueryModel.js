@@ -8,6 +8,6 @@ export default class ListQueryModel{
         return CommonModel.get('https://api.github.com/users/'+name)
     }
     queryRepos(name){
-        return CommonModel.get('https://api.github.com/users/'+name+'/repos?type=all')
+        return CommonModel.get('https://api.github.com/users/'+name+'/repos',{type:'all',sort:"created",direction:"desc"})
     }
 }

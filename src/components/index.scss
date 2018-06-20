@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 a {
   background-color: transparent;
 }
@@ -5,10 +8,30 @@ a {
   color: #0366d6;
   text-decoration: none;
 }
-
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
+}
+body {
+  min-width: 1020px;
+  word-wrap: break-word;
+}
+.col-12,.col-9{
+  padding-left: 0;
+}
+.d-inline-block h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
 .px-3 {
   padding-right: 16px !important;
   padding-left: 16px !important;
+}
+.pr-3 {
+  padding-right: 16px !important;
 }
 .mt-4 {
   margin-top: 24px !important;
@@ -17,14 +40,37 @@ a {
   padding-top: 16px !important;
   padding-bottom: 16px !important;
 }
-
-
+.mr-3 {
+  margin-right: 16px !important;
+}
+.py-4 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+.width-full {
+  width: 100% !important;
+}
+.border-bottom {
+  border-bottom: 1px #e1e4e8 solid !important;
+}
+.d-block {
+  display: block !important;
+}
+ul, ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .login{
   width: 500px;
   height: 200px;
   margin: 200px auto;
 }
-
+.container-lg {
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .clearfix::before {
   display: table;
   content: "";
@@ -109,4 +155,13 @@ a {
 }
 .d-block {
   display: block !important;
+}
+.repo-language-color {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
 }

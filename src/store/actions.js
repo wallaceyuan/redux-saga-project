@@ -8,5 +8,8 @@ export default {
     },
     getListAsync(name){
         return {type:types.GET_LIST_ASYNC,name}
+    },
+    getListResponseAsync(name){
+        return {type:types.GET_LIST_REPO_ASYNC,name}
     }
 }
