@@ -10,4 +10,7 @@ export default class ListQueryModel{
     queryRepos(name){
         return CommonModel.get('https://api.github.com/users/'+name+'/repos',{type:'all',sort:"created",direction:"desc"})
     }
+    queryFollower(name){
+        return CommonModel.get('https://api.github.com/users/'+name+'/followers')
+    }
 }

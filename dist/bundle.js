@@ -14428,7 +14428,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box; }\n\na {\n  background-color: transparent; }\n\na {\n  color: #0366d6;\n  text-decoration: none; }\n\nbody {\n  font-family: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";\n  font-size: 14px;\n  line-height: 1.5;\n  color: #24292e;\n  background-color: #fff; }\n\nbody {\n  min-width: 1020px;\n  word-wrap: break-word; }\n\n.col-12, .col-9 {\n  padding-left: 0; }\n\n.d-inline-block h3 {\n  font-size: 20px;\n  font-weight: 600; }\n\n.px-3 {\n  padding-right: 16px !important;\n  padding-left: 16px !important; }\n\n.pr-3 {\n  padding-right: 16px !important; }\n\n.mt-4 {\n  margin-top: 24px !important; }\n\n.py-3 {\n  padding-top: 16px !important;\n  padding-bottom: 16px !important; }\n\n.mr-3 {\n  margin-right: 16px !important; }\n\n.py-4 {\n  padding-top: 24px !important;\n  padding-bottom: 24px !important; }\n\n.width-full {\n  width: 100% !important; }\n\n.border-bottom {\n  border-bottom: 1px #e1e4e8 solid !important; }\n\n.d-block {\n  display: block !important; }\n\nul, ol {\n  padding-left: 0;\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.login {\n  width: 500px;\n  height: 200px;\n  margin: 200px auto; }\n\n.container-lg {\n  max-width: 1012px;\n  margin-right: auto;\n  margin-left: auto; }\n\n.clearfix::before {\n  display: table;\n  content: \"\"; }\n\n.float-left {\n  float: left !important; }\n\n.user-profile-nav {\n  background-color: #fff;\n  border-bottom: solid 1px #d1d5da; }\n\n.top-0 {\n  top: 0 !important; }\n\n.UnderlineNav {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #e1e4e8; }\n\n.UnderlineNav-body {\n  display: flex;\n  margin-bottom: -1px; }\n\n.UnderlineNav-item {\n  margin-right: 16px;\n  padding: 16px 8px;\n  border-bottom: 2px solid transparent;\n  color: #586069;\n  text-align: center;\n  font-size: 14px;\n  line-height: 1.5; }\n\n.UnderlineNav-item:focus, .UnderlineNav-item:hover {\n  color: #24292e;\n  text-decoration: none;\n  transition: .2s ease;\n  border-bottom-color: #d1d5da; }\n\n.UnderlineNav-item:focus .UnderlineNav-octicon, .UnderlineNav-item:hover .UnderlineNav-octicon {\n  color: #6a737d; }\n\n.UnderlineNav-item.selected {\n  color: #24292e;\n  font-weight: 600;\n  border-bottom-color: #e36209; }\n\n.UnderlineNav-item.selected .UnderlineNav-octicon {\n  color: #6a737d; }\n\n.UnderlineNav--right {\n  justify-content: flex-end; }\n\n.UnderlineNav--right .UnderlineNav-item {\n  margin-right: 0;\n  margin-left: 16px; }\n\n.UnderlineNav--right .UnderlineNav-actions {\n  flex: 1 1 auto; }\n\n.UnderlineNav-actions {\n  align-self: center; }\n\n.UnderlineNav--full {\n  display: block; }\n\n.UnderlineNav-octicon {\n  color: #959da5; }\n\n.UnderlineNav-container {\n  display: flex;\n  justify-content: space-between; }\n\n.UnderlineNav-item:hover, .UnderlineNav-item:focus {\n  color: #24292e;\n  text-decoration: none;\n  border-bottom-color: #d1d5da;\n  transition: 0.2s ease; }\n\n.UnderlineNav-item:hover .UnderlineNav-octicon, .UnderlineNav-item:focus .UnderlineNav-octicon {\n  color: #6a737d; }\n\n.Counter {\n  display: inline-block;\n  padding: 2px 5px;\n  font-size: 12px;\n  font-weight: 600;\n  line-height: 1;\n  color: #586069;\n  background-color: rgba(27, 31, 35, 0.08);\n  border-radius: 20px; }\n\n.vcard-names-container {\n  top: 0; }\n\n.vcard-names {\n  line-height: 1; }\n\n.vcard-fullname {\n  font-size: 26px;\n  line-height: 30px; }\n\n.vcard-username {\n  font-size: 20px;\n  font-style: normal;\n  font-weight: 300;\n  line-height: 24px;\n  color: #666; }\n\n.d-block {\n  display: block !important; }\n\n.repo-language-color {\n  position: relative;\n  top: 1px;\n  display: inline-block;\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n  margin-right: 5px; }\n", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box; }\n\na {\n  background-color: transparent; }\n\na {\n  color: #0366d6;\n  text-decoration: none; }\n\nbody {\n  font-family: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";\n  font-size: 14px;\n  line-height: 1.5;\n  color: #24292e;\n  background-color: #fff; }\n\nbody {\n  min-width: 1020px;\n  word-wrap: break-word; }\n\n.col-12, .col-9 {\n  padding-left: 0; }\n\n.d-inline-block h3 {\n  font-size: 20px;\n  font-weight: 600; }\n\n.px-3 {\n  padding-right: 16px !important;\n  padding-left: 16px !important; }\n\n.pr-3 {\n  padding-right: 16px !important; }\n\n.mt-4 {\n  margin-top: 24px !important; }\n\n.py-3 {\n  padding-top: 16px !important;\n  padding-bottom: 16px !important; }\n\n.mr-3 {\n  margin-right: 16px !important; }\n\n.py-4 {\n  padding-top: 24px !important;\n  padding-bottom: 24px !important; }\n\n.width-full {\n  width: 100% !important; }\n\n.border-bottom {\n  border-bottom: 1px #e1e4e8 solid !important; }\n\n.d-block {\n  display: block !important; }\n\nul, ol {\n  padding-left: 0;\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.login {\n  width: 500px;\n  height: 200px;\n  margin: 200px auto; }\n\n.container-lg {\n  max-width: 1012px;\n  margin-right: auto;\n  margin-left: auto; }\n\n.clearfix::before {\n  display: table;\n  content: \"\"; }\n\n.float-left {\n  float: left !important; }\n\n.user-profile-nav {\n  background-color: #fff;\n  border-bottom: solid 1px #d1d5da; }\n\n.top-0 {\n  top: 0 !important; }\n\n.UnderlineNav {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #e1e4e8; }\n\n.UnderlineNav-body {\n  display: flex;\n  margin-bottom: -1px; }\n\n.UnderlineNav-item {\n  margin-right: 16px;\n  padding: 16px 8px;\n  border-bottom: 2px solid transparent;\n  color: #586069;\n  text-align: center;\n  font-size: 14px;\n  line-height: 1.5; }\n\n.UnderlineNav-item:focus, .UnderlineNav-item:hover {\n  color: #24292e;\n  text-decoration: none;\n  transition: .2s ease;\n  border-bottom-color: #d1d5da; }\n\n.UnderlineNav-item:focus .UnderlineNav-octicon, .UnderlineNav-item:hover .UnderlineNav-octicon {\n  color: #6a737d; }\n\n.UnderlineNav-item.selected {\n  color: #24292e;\n  font-weight: 600;\n  border-bottom-color: #e36209; }\n\n.UnderlineNav-item.selected .UnderlineNav-octicon {\n  color: #6a737d; }\n\n.UnderlineNav--right {\n  justify-content: flex-end; }\n\n.UnderlineNav--right .UnderlineNav-item {\n  margin-right: 0;\n  margin-left: 16px; }\n\n.UnderlineNav--right .UnderlineNav-actions {\n  flex: 1 1 auto; }\n\n.UnderlineNav-actions {\n  align-self: center; }\n\n.UnderlineNav--full {\n  display: block; }\n\n.UnderlineNav-octicon {\n  color: #959da5; }\n\n.UnderlineNav-container {\n  display: flex;\n  justify-content: space-between; }\n\n.UnderlineNav-item.selected {\n  font-weight: 600;\n  color: #24292e;\n  border-bottom-color: #e36209; }\n\n.UnderlineNav-item:hover, .UnderlineNav-item:focus {\n  color: #24292e;\n  text-decoration: none;\n  border-bottom-color: #d1d5da;\n  transition: 0.2s ease; }\n\n.UnderlineNav-item:hover .UnderlineNav-octicon, .UnderlineNav-item:focus .UnderlineNav-octicon {\n  color: #6a737d; }\n\n.Counter {\n  display: inline-block;\n  padding: 2px 5px;\n  font-size: 12px;\n  font-weight: 600;\n  line-height: 1;\n  color: #586069;\n  background-color: rgba(27, 31, 35, 0.08);\n  border-radius: 20px; }\n\n.vcard-names-container {\n  top: 0; }\n\n.vcard-names {\n  line-height: 1; }\n\n.vcard-fullname {\n  font-size: 26px;\n  line-height: 30px; }\n\n.vcard-username {\n  font-size: 20px;\n  font-style: normal;\n  font-weight: 300;\n  line-height: 24px;\n  color: #666; }\n\n.d-block {\n  display: block !important; }\n\n.repo-language-color {\n  position: relative;\n  top: 1px;\n  display: inline-block;\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n  margin-right: 5px; }\n", ""]);
 
 // exports
 
@@ -46008,20 +46008,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var List = function (_Component) {
     (0, _inherits3.default)(List, _Component);
 
-    function List() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
+    function List(props) {
         (0, _classCallCheck3.default)(this, List);
 
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
+        var _this = (0, _possibleConstructorReturn3.default)(this, (List.__proto__ || (0, _getPrototypeOf2.default)(List)).call(this, props));
 
-        return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = List.__proto__ || (0, _getPrototypeOf2.default)(List)).call.apply(_ref, [this].concat(args))), _this), _this.getResponse = function () {
+        _this.getResponse = function () {
+            _this.props.list.selected = 'repo';
             _this.props.getListResponseAsync(_this.props.login.name || window.localStorage.getItem('gitHubName'));
-        }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+        };
+
+        _this.getFollower = function () {
+            _this.props.list.selected = 'follower';
+            _this.props.getListFollowerAsync(_this.props.login.name || window.localStorage.getItem('gitHubName'));
+        };
+
+        var t = _this;
+        return _this;
     }
 
     (0, _createClass3.default)(List, [{
@@ -46034,8 +46037,10 @@ var List = function (_Component) {
         key: 'render',
         value: function render() {
             var info = this.props.list.info;
+            var follower = this.props.list.follower;
             console.log(this.props);
-            var repoDom = [];
+            var repoDom = [],
+                followerDom = [];
             this.props.list.reps && this.props.list.reps.forEach(function (rep, index) {
                 var url = "https://github.com/" + rep.full_name;
                 repoDom.push(_react2.default.createElement(
@@ -46081,6 +46086,40 @@ var List = function (_Component) {
                     )
                 ));
             });
+            this.props.list.followers && this.props.list.followers.forEach(function (follower, index) {
+                followerDom.push(_react2.default.createElement(
+                    'div',
+                    { className: 'd-table table-fixed col-12 width-full py-4 border-bottom border-gray-light', key: index },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'd-table-cell col-1 v-align-top' },
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'd-inline-block', href: '/fengjianjunstudy' },
+                            _react2.default.createElement('img', { 'class': 'avatar', src: 'https://avatars1.githubusercontent.com/u/11567097?s=100&v=4', width: '50', height: '50', alt: '@fengjianjunstudy' })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'd-table-cell col-9 v-align-top pr-3' },
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'd-inline-block no-underline mb-1', href: '/fengjianjunstudy', 'aria-describedby': 'hovercard-aria-description' },
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'f4 link-gray-dark' },
+                                'coding\u7B28\u5988'
+                            ),
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'link-gray pl-1' },
+                                'fengjianjunstudy'
+                            )
+                        )
+                    )
+                ));
+            });
+
             return _react2.default.createElement(
                 'div',
                 { className: 'container-lg clearfix px-3 mt-4 ' },
@@ -46126,7 +46165,7 @@ var List = function (_Component) {
                                 { className: 'UnderlineNav-body', 'data-pjax': '', role: 'navigation' },
                                 _react2.default.createElement(
                                     'a',
-                                    { href: '#/list?tab=repositories', className: 'UnderlineNav-item ', 'aria-selected': 'false', role: 'tab', title: 'Repositories' },
+                                    { onClick: this.getResponse, className: 'UnderlineNav-item ' + (this.props.list.selected == 'repo' ? 'selected' : ''), 'aria-selected': 'true', role: 'tab', title: 'Repositories' },
                                     'Repositories',
                                     _react2.default.createElement(
                                         'span',
@@ -46136,7 +46175,7 @@ var List = function (_Component) {
                                 ),
                                 _react2.default.createElement(
                                     'a',
-                                    { href: '#/list?tab=followers', className: 'UnderlineNav-item ', 'aria-selected': 'false', role: 'tab', title: 'Followers' },
+                                    { onClick: this.getFollower, className: 'UnderlineNav-item ' + (this.props.list.selected == 'follower' ? 'selected' : ''), 'aria-selected': 'false', role: 'tab', title: 'Followers' },
                                     'Followers',
                                     _react2.default.createElement(
                                         'span',
@@ -46146,7 +46185,7 @@ var List = function (_Component) {
                                 ),
                                 _react2.default.createElement(
                                     'a',
-                                    { href: '#/list?tab=following', className: 'UnderlineNav-item ', 'aria-selected': 'false', role: 'tab', title: 'Following' },
+                                    { href: '#/list?tab=following', className: 'UnderlineNav-item ' + (this.props.list.selected == 'following' ? 'selected' : ''), 'aria-selected': 'false', role: 'tab', title: 'Following' },
                                     'Following',
                                     _react2.default.createElement(
                                         'span',
@@ -46161,12 +46200,17 @@ var List = function (_Component) {
                             { className: 'position-relative' },
                             _react2.default.createElement(
                                 'div',
-                                { id: 'user-repositories-list' },
+                                { id: 'user-repositories-list', style: { 'display': this.props.list.selected == 'repo' ? 'block' : 'none' } },
                                 _react2.default.createElement(
                                     'ul',
                                     { 'data-filterable-for': 'your-repos-filter' },
                                     repoDom
                                 )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { id: 'user-repositories-list', style: { 'display': this.props.list.selected == 'follower' ? 'block' : 'none' } },
+                                followerDom
                             )
                         )
                     )
@@ -46607,6 +46651,11 @@ var ListQueryModel = function () {
         value: function queryRepos(name) {
             return _CommonModel2.default.get('https://api.github.com/users/' + name + '/repos', { type: 'all', sort: "created", direction: "desc" });
         }
+    }, {
+        key: 'queryFollower',
+        value: function queryFollower(name) {
+            return _CommonModel2.default.get('https://api.github.com/users/' + name + '/followers');
+        }
     }]);
     return ListQueryModel;
 }(); /**
@@ -46659,7 +46708,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _marked = /*#__PURE__*/_regenerator2.default.mark(requestApi),
     _marked2 = /*#__PURE__*/_regenerator2.default.mark(getListResponseAsync),
     _marked3 = /*#__PURE__*/_regenerator2.default.mark(enterName),
-    _marked4 = /*#__PURE__*/_regenerator2.default.mark(rootSaga); /**
+    _marked4 = /*#__PURE__*/_regenerator2.default.mark(watchAction),
+    _marked5 = /*#__PURE__*/_regenerator2.default.mark(getListFollowerAsync),
+    _marked6 = /*#__PURE__*/_regenerator2.default.mark(rootSaga); /**
                                                                    * Created by yuanyuan on 2018/6/16.
                                                                    */
 
@@ -46672,6 +46723,9 @@ var Api = {
     },
     requestRep: function requestRep(name) {
         return listQueryModel.queryRepos(name);
+    },
+    requestFollower: function requestFollower(name) {
+        return listQueryModel.queryFollower(name);
     }
 };
 
@@ -46781,15 +46835,16 @@ function enterName() {
     }, _marked3, this);
 }
 
-function rootSaga(_ref4) {
-    var dispatch = _ref4.dispatch,
-        getState = _ref4.getState;
-    return _regenerator2.default.wrap(function rootSaga$(_context4) {
+function watchAction(getState) {
+    return _regenerator2.default.wrap(function watchAction$(_context4) {
         while (1) {
             switch (_context4.prev = _context4.next) {
                 case 0:
                     _context4.next = 2;
-                    return (0, _effects.all)([requestApi(), getListResponseAsync(), enterName()]);
+                    return (0, _effects.takeEvery)('*', function (action) {
+                        //console.log(action)
+                        //console.log(getState())
+                    });
 
                 case 2:
                 case 'end':
@@ -46797,6 +46852,59 @@ function rootSaga(_ref4) {
             }
         }
     }, _marked4, this);
+}
+
+function getListFollowerAsync() {
+    var _ref4, name, followers;
+
+    return _regenerator2.default.wrap(function getListFollowerAsync$(_context5) {
+        while (1) {
+            switch (_context5.prev = _context5.next) {
+                case 0:
+                    if (false) {}
+
+                    _context5.next = 3;
+                    return (0, _effects.take)(types.GET_LIST_FOLLOWER_ASYNC);
+
+                case 3:
+                    _ref4 = _context5.sent;
+                    name = _ref4.name;
+                    _context5.next = 7;
+                    return (0, _effects.call)(Api.requestFollower, name);
+
+                case 7:
+                    followers = _context5.sent;
+                    _context5.next = 10;
+                    return (0, _effects.put)({ type: types.GET_LIST_FOLLOWER, followers: followers });
+
+                case 10:
+                    _context5.next = 0;
+                    break;
+
+                case 12:
+                case 'end':
+                    return _context5.stop();
+            }
+        }
+    }, _marked5, this);
+}
+
+function rootSaga(_ref5) {
+    var dispatch = _ref5.dispatch,
+        getState = _ref5.getState;
+    return _regenerator2.default.wrap(function rootSaga$(_context6) {
+        while (1) {
+            switch (_context6.prev = _context6.next) {
+                case 0:
+                    _context6.next = 2;
+                    return (0, _effects.all)([requestApi(), getListResponseAsync(), getListFollowerAsync(), enterName(), watchAction(getState)]);
+
+                case 2:
+                case 'end':
+                    return _context6.stop();
+            }
+        }
+    }, _marked6, this);
 }
 
 /***/ }),
@@ -46823,6 +46931,9 @@ var GET_LIST = exports.GET_LIST = 'GET_LIST';
 
 var GET_LIST_REPO_ASYNC = exports.GET_LIST_REPO_ASYNC = 'GET_LIST_REPO_ASYNC';
 var GET_LIST_REPO = exports.GET_LIST_REPO = 'GET_LIST_REPO';
+
+var GET_LIST_FOLLOWER_ASYNC = exports.GET_LIST_FOLLOWER_ASYNC = 'GET_LIST_FOLLOWER_ASYNC';
+var GET_LIST_FOLLOWER = exports.GET_LIST_FOLLOWER = 'GET_LIST_FOLLOWER';
 
 var GET_NAME_ASYNC = exports.GET_NAME_ASYNC = 'GET_NAME_ASYNC';
 var GET_NAME = exports.GET_NAME = 'GET_NAME';
@@ -46858,6 +46969,9 @@ exports.default = {
     },
     getListResponseAsync: function getListResponseAsync(name) {
         return { type: types.GET_LIST_REPO_ASYNC, name: name };
+    },
+    getListFollowerAsync: function getListFollowerAsync(name) {
+        return { type: types.GET_LIST_FOLLOWER_ASYNC, name: name };
     }
 }; /**
     * Created by yuan on 2018/6/15.
@@ -46974,7 +47088,7 @@ var _extends2 = __webpack_require__(/*! babel-runtime/helpers/extends */ "./node
 var _extends3 = _interopRequireDefault(_extends2);
 
 exports.default = function () {
-    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { info: "", reps: "" };
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { info: "", reps: "", followers: "" };
     var action = arguments[1];
 
     switch (action.type) {
@@ -46982,6 +47096,8 @@ exports.default = function () {
             return (0, _extends3.default)({}, state, { info: action.info });
         case types.GET_LIST_REPO:
             return (0, _extends3.default)({}, state, { reps: action.reps });
+        case types.GET_LIST_FOLLOWER:
+            return (0, _extends3.default)({}, state, { followers: action.followers });
         default:
             return state;
     }

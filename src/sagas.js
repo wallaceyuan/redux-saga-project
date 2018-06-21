@@ -14,6 +14,9 @@ let Api = {
     },
     requestRep(name){
         return listQueryModel.queryRepos(name)
+    },
+    requestFollower(name){
+        return listQueryModel.queryFollower(name)
     }
 }
 
@@ -42,8 +45,28 @@ function* enterName() {
     }
 }
 
+function* watchAction(getState) {
+    yield takeEvery('*',function (action) {
+        //console.log(action)
+        //console.log(getState())
+    })
+}
+
+function* getListFollowerAsync() {
+    while(true){
+        var { name } = yield take(types.GET_LIST_FOLLOWER_ASYNC)//监听
+        let followers = yield call(Api.requestFollower,name)
+        yield put({type:types.GET_LIST_FOLLOWER,followers})
+    }
+}
+
+
 export function* rootSaga({dispatch,getState}) {
     yield all([
-        requestApi(),getListResponseAsync(),enterName()
+        requestApi(),
+        getListResponseAsync(),
+        getListFollowerAsync(),
+        enterName(),
+        watchAction(getState)
     ])
 }

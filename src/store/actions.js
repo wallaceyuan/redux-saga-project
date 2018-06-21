@@ -11,5 +11,8 @@ export default {
     },
     getListResponseAsync(name){
         return {type:types.GET_LIST_REPO_ASYNC,name}
+    },
+    getListFollowerAsync(name){
+        return {type:types.GET_LIST_FOLLOWER_ASYNC,name}
     }
 }

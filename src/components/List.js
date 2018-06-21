@@ -10,17 +10,27 @@ import './index.scss';
 
 
 class List extends Component{
+    constructor(props){
+        super(props)
+        const t = this
+    }
     componentDidMount(){
         this.props.getListAsync(this.props.login.name || window.localStorage.getItem('gitHubName'))
         this.getResponse()
     }
     getResponse = ()=>{
+        this.props.list.selected = 'repo'
         this.props.getListResponseAsync(this.props.login.name || window.localStorage.getItem('gitHubName'))
+    }
+    getFollower = ()=>{
+        this.props.list.selected = 'follower'
+        this.props.getListFollowerAsync(this.props.login.name || window.localStorage.getItem('gitHubName'))
     }
     render(){
         const info = this.props.list.info
+        const follower = this.props.list.follower
         console.log(this.props)
-        let repoDom = []
+        let repoDom = [],followerDom = []
         this.props.list.reps && this.props.list.reps.forEach((rep,index)=>{
             let url = "https://github.com/" + rep.full_name
             repoDom.push(
@@ -41,6 +51,23 @@ class List extends Component{
                 </li>
             )
         })
+        this.props.list.followers && this.props.list.followers.forEach((follower,index)=>{
+            followerDom.push(
+                <div className="d-table table-fixed col-12 width-full py-4 border-bottom border-gray-light" key={index}>
+                    <div className="d-table-cell col-1 v-align-top">
+                        <a className="d-inline-block" href="/fengjianjunstudy">
+                            <img class="avatar" src="https://avatars1.githubusercontent.com/u/11567097?s=100&amp;v=4" width="50" height="50" alt="@fengjianjunstudy" />
+                        </a>
+                    </div>
+                    <div className="d-table-cell col-9 v-align-top pr-3">
+                        <a className="d-inline-block no-underline mb-1"  href="/fengjianjunstudy" aria-describedby="hovercard-aria-description">
+                            <span className="f4 link-gray-dark">coding笨妈</span>
+                            <span className="link-gray pl-1">fengjianjunstudy</span>
+                        </a>
+                    </div>
+            </div>
+        )})
+
         return(
             <div className="container-lg clearfix px-3 mt-4 ">
                 <div className="row ">
@@ -59,19 +86,22 @@ class List extends Component{
                         <div className="UnderlineNav user-profile-nav top-0 is-placeholder" style={{visibility: 'hidden', display: 'none',height: '55px'}}></div>
                         <div className="UnderlineNav user-profile-nav js-sticky top-0" style={{position: 'static', top: '0px', left: '403.5px', width: '727px'}}>
                             <nav className="UnderlineNav-body" data-pjax="" role="navigation">
-                                <a href="#/list?tab=repositories" className="UnderlineNav-item " aria-selected="false" role="tab" title="Repositories">Repositories<span className="Counter">{info.public_repos}</span>
+                                <a onClick={ this.getResponse } className={`UnderlineNav-item ${this.props.list.selected == 'repo'?'selected':''}`} aria-selected="true" role="tab" title="Repositories">Repositories<span className="Counter" >{info.public_repos}</span>
                                 </a>
-                                <a href="#/list?tab=followers" className="UnderlineNav-item " aria-selected="false" role="tab" title="Followers">Followers<span className="Counter">{info.followers}</span>
+                                <a onClick={this.getFollower } className={`UnderlineNav-item ${this.props.list.selected == 'follower'?'selected':''}`} aria-selected="false" role="tab" title="Followers">Followers<span className="Counter">{info.followers}</span>
                                 </a>
-                                <a href="#/list?tab=following" className="UnderlineNav-item " aria-selected="false" role="tab" title="Following">Following<span className="Counter">{info.following}</span>
+                                <a href="#/list?tab=following" className={`UnderlineNav-item ${this.props.list.selected == 'following'?'selected':''}`} aria-selected="false" role="tab" title="Following">Following<span className="Counter">{info.following}</span>
                                 </a>
                             </nav>
                         </div>
                         <div className="position-relative">
-                            <div id="user-repositories-list">
+                            <div id="user-repositories-list" style={{'display':this.props.list.selected == 'repo'?'block':'none'}}>
                                 <ul data-filterable-for="your-repos-filter">
                                     { repoDom }
                                 </ul>
+                            </div>
+                            <div id="user-repositories-list" style={{'display':this.props.list.selected == 'follower'?'block':'none'}}>
+                                {followerDom}
                             </div>
                         </div>
                     </div>

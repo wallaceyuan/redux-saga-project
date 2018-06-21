@@ -109,7 +109,11 @@ ul, ol {
 .UnderlineNav--full{display:block;}
 .UnderlineNav-octicon{color:#959da5;}
 .UnderlineNav-container{display:flex;justify-content:space-between;}
-
+.UnderlineNav-item.selected {
+  font-weight: 600;
+  color: #24292e;
+  border-bottom-color: #e36209;
+}
 
 
 
