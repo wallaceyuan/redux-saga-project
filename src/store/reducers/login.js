@@ -7,6 +7,8 @@ export default function (state = { name:''},action) {
     switch (action.type){
         case types.GET_NAME:
             return {...state,name:action.name}
+        case types.CLEAN_STATE:
+            return { name:''}
         default:
             return state;
     }

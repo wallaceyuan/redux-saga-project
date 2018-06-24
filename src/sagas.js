@@ -17,6 +17,9 @@ let Api = {
     },
     requestFollower(name){
         return listQueryModel.queryFollower(name)
+    },
+    requestFollowing(name){
+        return listQueryModel.queryFollowing(name)
     }
 }
 
@@ -60,12 +63,21 @@ function* getListFollowerAsync() {
     }
 }
 
+function* getListFollowingAsync() {
+    while(true){
+        var { name } = yield take(types.GET_LIST_FOLLOWING_ASYNC)//监听
+        let following = yield call(Api.requestFollowing,name)
+        yield put({type:types.GET_LIST_FOLLOWING,following})
+    }
+}
+
 
 export function* rootSaga({dispatch,getState}) {
     yield all([
         requestApi(),
         getListResponseAsync(),
         getListFollowerAsync(),
+        getListFollowingAsync(),
         enterName(),
         watchAction(getState)
     ])

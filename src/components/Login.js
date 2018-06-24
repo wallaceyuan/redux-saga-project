@@ -10,6 +10,9 @@ const Search = Input.Search;
 import './index.scss';
 
 class Login extends Component{
+    componentDidMount(){
+        this.props.cleanState()
+    }
     render(){
         return(
             <div className="login">

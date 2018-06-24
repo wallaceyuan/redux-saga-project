@@ -14,5 +14,11 @@ export default {
     },
     getListFollowerAsync(name){
         return {type:types.GET_LIST_FOLLOWER_ASYNC,name}
+    },
+    getListFollowingAsync(name){
+        return {type:types.GET_LIST_FOLLOWING_ASYNC,name}
+    },
+    cleanState(){
+        return {type:types.CLEAN_STATE}
     }
 }

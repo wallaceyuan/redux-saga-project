@@ -13,4 +13,7 @@ export default class ListQueryModel{
     queryFollower(name){
         return CommonModel.get('https://api.github.com/users/'+name+'/followers')
     }
+    queryFollowing(name){
+        return CommonModel.get('https://api.github.com/users/'+name+'/following')
+    }
 }
